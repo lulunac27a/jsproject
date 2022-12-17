@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Module 6 Assignment</title>
+</head>
+<body>
+    <h1>Gym Membership Application</h1>
+    <main>
+    <div id="viewTabs">
+        <input type="button" id="seeFormButton" value="View Gym Form">
+        <input type="button" id="seeListButton" value="View List of Gym Members">
+    </div>
+    <div id="seeForm">
+        <form id="gymForm">
+            <label for="firstName" id="firstNameLabel">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <br>
+            <label for="lastName" id="lastNameLabel">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            <br>
+            <label for="username" id="usernameLabel">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="enrollDate" id="enrollDateLabel">Enroll Date:</label>
+            <input type="date" id="enrollDate" name="enrollDate" required>
+            <br>
+            <label for="birthDate" id="birthDateLabel">Birth Date:</label>
+            <input type="date" id="birthDate" name="birthDate" required>
+            <br>
+            <input type="submit" value="Add Member">
+        </form>
+    </div>
+    <div id="seeList" style="display: none">
+        <div class="member-list_filters">
+            <label for="filterText">Filter Text:</label>
+            <input type="text" id="filterText" name="keyboard">
+
+            <label for="sortBy">Sort By:</label>
+            <select id="sortBy" name="sortby">
+                <option value="firstname">First Name</option>
+                <option value="lastname">Last Name</option>
+                <option value="username">Username</option>
+                <option value="enrolldate">Enroll Date</option>
+                <option value="birthdate">Birth Date</option>
+                <option value="id">ID</option>
+            </select>
+        </div>
+        <div class="member-list_members">
+            
+        </div>
+    </div>
+
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/main2.js"></script>
+</body>
+</html>

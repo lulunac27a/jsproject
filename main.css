@@ -1,0 +1,29 @@
+:root {
+    --font: Arial;
+    --invalid-color: red;
+    --heading-color: blue;
+    --normal: 3px;
+}
+h1 {
+    font-weight: bold;
+    color: var(--heading-color);
+    text-align: center;
+    background-color: yellow;
+}
+* {
+    font-family: var(--font);
+}
+.invalid {
+    border-color: var(--invalid-color);
+    outline-color: var(--invalid-color);
+}
+.member {
+    border-width: var(--normal);
+    border-style: solid;
+    width: 400px;
+    text-align: center;
+}
+.member-list_members {
+    border-color: red;
+    border-width: var(--normal);
+}
